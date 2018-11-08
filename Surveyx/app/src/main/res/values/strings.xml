@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GLOBAL -->
+    <string name="app_name">SG Academy</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_surveys">SurveysListActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="notification_title">Complete the survey now!</string>
+    <string name="global_next">Next</string>
+    <string name="global_submit">Submit</string>
+    <string name="global_warning">Warning</string>
+    <string name="global_close">Close</string>
+    <string name="global_yes">Yes</string>
+    <string name="global_no">No</string>
+    <string name="app_id">1534287020156031</string>
+    <string name="question_mark">\?</string>
+    <string name="unexpected_network_error">Network failure</string>
+
+    <!-- LOGIN -->
+    <string name="login_title">SOLIDGEAR ACADEMY</string>
+    <string name="login_user_placeholder">username</string>
+    <string name="login_pass_placeholder">password</string>
+    <string name="login_button">sign in</string>
+    <string name="incorrect_login">Incorrect login</string>
+    <string name="descriptor_login_user">loginUser</string>
+    <string name="descriptor_login_pass">loginPass</string>
+    <string name="descriptor_login_button">loginButton</string>
+
+    <!-- DIALOGS -->
+    <string name="dialog_gps_title">Activate GPS</string>
+    <string name="dialog_gps_message">If you don\'t have your gps enabled, you won\'t be
+    able to access to the located surveys.</string>
+    <string name="dialog_gps_settings">Settings</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_getting_surveys">Getting Surveys...</string>
+    <string name="dialog_getting_survey">Getting Survey...</string>
+    <string name="dialog_finish_survey">You will lose all the answers you have provided so far. Do you really want to finish the Survey?</string>
+    <string name="descriptor_dialog_error_button">dialogErrorButton</string>
+    <string name="descriptor_dialog_yes_button">dialogYesButton</string>
+    <string name="descriptor_dialog_no_button">dialogNoButton</string>
+    <string name="dialog_waiting_location">Waiting for the location</string>
+
+    <!-- SURVEYS -->
+    <string name="question_label">Question</string>
+    <string name="descriptor_survey_cancel_button">surveyCancelButton</string>
+    <string name="descriptor_survey_next_button">surveyNextButton</string>
+    <string name="title_activity_social_network">SocialNetworkActivity</string>
+    <string name="descriptor_survey_submit_button">surveySubmitButton</string>
+    <string name="answer_sent_successfully">Answer saved!</string>
+
+    <!-- SOCIAL NETWORKS -->
+    <string name="social_networks_thanks">Thanks!</string>
+    <string name="social_networks_survey_completed">Survey has been completed correctly.</string>
+    <string name="social_networks_discount">Earn 5% discount with your next product!</string>
+    <string name="social_networks_share">Do you want to share this Survey?</string>
+    <string name="social_networks_tweet">I have just completed a survey!</string>
+    <string name="social_networks_tweet_error">Twitter app isn\'t found</string>
+    <string name="social_networks_facebook_post">I have just completed a survey!</string>
+    <string name="social_networks_facebook_error">Facebook app isn\'t found</string>
+    <string name="social_networks_facebook_button">Share on Facebook</string>
+    <string name="social_networks_twitter_button">Share on Twitter</string>
+
+</resources>

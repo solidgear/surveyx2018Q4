@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="form_input_color">#323232</color>
+    <color name="main_color">#323232</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_grey">#888</color>
+    <color name="orange">#f16137</color>
+    <color name="darkorange">#8b4513</color>
+    <color name="toolbar_background">#353535</color>
+    <color name="background">#C4C4C4</color>
+</resources>

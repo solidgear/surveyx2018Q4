@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:background="#7C7C7C"
+        android:gravity="center"
+        android:padding="6dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#C8C8C8"
+            android:textSize="18sp"
+            android:text="@string/question_label"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#C8C8C8"
+            android:textSize="18sp"
+            android:text="@string/question_mark"
+            android:id="@+id/textViewCurrentQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#C8C8C8"
+            android:textSize="18sp"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#C8C8C8"
+            android:textSize="18sp"
+            android:text="@string/question_mark"
+            android:id="@+id/textViewTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:background="@color/background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/scrollView">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:padding="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:layout_weight="0" >
+
+        <es.academy.solidgear.surveyx.ui.views.CustomButton
+            style="@style/surveyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:id="@+id/buttonCancel"
+            android:contentDescription="@string/descriptor_survey_cancel_button"
+            android:layout_weight="1" />
+
+        <es.academy.solidgear.surveyx.ui.views.CustomButton
+            style="@style/surveyButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:id="@+id/buttonNext"
+            android:contentDescription="@string/descriptor_survey_next_button"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

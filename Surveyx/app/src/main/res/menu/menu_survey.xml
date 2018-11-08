@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="es.academy.solidgear.surveyx.ui.activities.SurveyActivity">
+
+    <item android:id="@+id/action_cancel"
+        android:title="@android:string/cancel"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/action_next"
+        android:title="@string/global_next"
+        app:showAsAction="always"/>
+
+    <item android:id="@+id/action_submit"
+        android:title="@string/global_submit"
+        app:showAsAction="always"/>
+
+</menu>
