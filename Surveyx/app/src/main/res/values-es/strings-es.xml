@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GLOBAL -->
+    <string name="app_name">SG Academy</string>
+    <string name="action_logout">Cerrar sesión</string>
+    <string name="action_refresh">Refrescar</string>
+    <string name="title_activity_surveys">SurveysListActivity</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="hello_blank_fragment">Fragmento en blanco</string>
+    <string name="notification_title">Completa ahora la encuesta</string>
+    <string name="global_next">Siguiente</string>
+    <string name="global_submit">Enviar</string>
+    <string name="global_warning">Advertencia</string>
+    <string name="global_close">Cerrar</string>
+    <string name="global_yes">Sí</string>
+    <string name="global_no">No</string>
+    <string name="unexpected_network_error">Fallo de red</string>
+
+    <!-- LOGIN -->
+    <string name="login_title">SOLIDGEAR ACADEMY</string>
+    <string name="login_user_placeholder">Usuario</string>
+    <string name="login_pass_placeholder">Contraseña</string>
+    <string name="login_button">Acceder</string>
+    <string name="incorrect_login">Login incorrecto</string>
+    <string name="descriptor_login_user">Usuario login</string>
+    <string name="descriptor_login_pass">Contraseña login</string>
+    <string name="descriptor_login_button">Botón login</string>
+
+    <!-- DIALOGS -->
+    <string name="dialog_gps_title">Activar GPS</string>
+    <string name="dialog_gps_message">Si no tienes el gps activado, no podras tener acceso a encuestas locales.</string>
+    <string name="dialog_gps_settings">Ajustes</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="dialog_getting_surveys">Obteniendo encuestas...</string>
+    <string name="dialog_getting_survey">Obteniendo encuestas...</string>
+    <string name="dialog_finish_survey">Perderas todas las respuestas que has proporcionado. ¿Quieres terminar la encuesta?</string>
+    <string name="descriptor_dialog_error_button">Botón error de diálogo</string>
+    <string name="descriptor_dialog_yes_button">Botón sí de diálogo</string>
+    <string name="descriptor_dialog_no_button">Botón no de diálogo</string>
+    <string name="dialog_waiting_location">Esperando localización</string>
+
+    <!-- SURVEYS -->
+    <string name="question_label">Pregunta</string>
+    <string name="descriptor_survey_cancel_button">Botón cancelar encuesta</string>
+    <string name="descriptor_survey_next_button">Botón siguiente escuesta</string>
+    <string name="title_activity_social_network">SocialNetworkActivity</string>
+    <string name="descriptor_survey_submit_button">Botón enviar encuesta</string>
+    <string name="answer_sent_successfully">Respuesta guardada</string>
+
+    <!-- SOCIAL NETWORKS -->
+    <string name="social_networks_thanks">Gracias</string>
+    <string name="social_networks_survey_completed">La encuesta ha sido completada con éxito.</string>
+    <string name="social_networks_discount">consigue 5% de descuento en tu proximo producto!</string>
+    <string name="social_networks_share">¿Quieres compartir esta encuesta?</string>
+    <string name="social_networks_tweet">¡Acabo de completar una encuesta!</string>
+    <string name="social_networks_tweet_error">Aplicación de twitter no encontrada</string>
+    <string name="social_networks_facebook_post">¡Acabo de completar una encuesta!</string>
+    <string name="social_networks_facebook_error">Aplicación de facebook no encontrada</string>
+    <string name="social_networks_facebook_button">Compartir con Facebook</string>
+    <string name="social_networks_twitter_button">Compartir con Twitter</string>
+    <string name="social_networks_finish">Finalizar</string>
+</resources>
