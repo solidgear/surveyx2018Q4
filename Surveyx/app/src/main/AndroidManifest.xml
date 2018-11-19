@@ -56,6 +56,9 @@
             android:screenOrientation="sensorPortrait">
         </activity>
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b51eb5e061d4c1be57fefb22bb6ff1b835abe011" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

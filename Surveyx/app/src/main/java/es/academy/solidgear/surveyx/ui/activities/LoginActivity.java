@@ -78,6 +78,7 @@ public class LoginActivity extends BaseActivity {
         String password = passwordTextBox.getText().toString();
 
         apiManager.login(username, password, onLoginResponse);
+
     }
 
     private void showLoginInProgress() {
