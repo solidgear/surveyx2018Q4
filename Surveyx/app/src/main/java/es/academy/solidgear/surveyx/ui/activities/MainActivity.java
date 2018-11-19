@@ -5,6 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import es.academy.solidgear.surveyx.R;
+import com.crashlytics.android.answers.Answers;
+import com.crashlytics.android.answers.ContentViewEvent;
+
+import io.fabric.sdk.android.Fabric;
 
 
 public class MainActivity extends Activity {
@@ -14,6 +18,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Answers());
         setContentView(R.layout.activity_main);
     }
 
@@ -33,7 +38,6 @@ public class MainActivity extends Activity {
         } else {
             showSurveyListPage(token);
         }
-
         finish();
     }
 
@@ -47,5 +51,4 @@ public class MainActivity extends Activity {
         intent.putExtra(MainActivity.EXTRA_TOKEN, token);
         startActivity(intent);
     }
-
 }
