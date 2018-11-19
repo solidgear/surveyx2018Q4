@@ -1,6 +1,7 @@
 package es.academy.solidgear.surveyx.models;
 
 import java.io.Serializable;
+import java.util.Collections;
 import java.util.List;
 
 public class QuestionModel implements Serializable {
@@ -52,6 +53,7 @@ public class QuestionModel implements Serializable {
     }
 
     public List<OptionModel> getChoices() {
+        Collections.shuffle(choices);
         return choices;
     }
 
