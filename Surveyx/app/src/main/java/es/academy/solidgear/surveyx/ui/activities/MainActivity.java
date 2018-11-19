@@ -20,9 +20,6 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Answers());
         setContentView(R.layout.activity_main);
-        // TODO: Use your own attributes to track content views in your app
-
-
     }
 
     @Override
@@ -41,7 +38,6 @@ public class MainActivity extends Activity {
         } else {
             showSurveyListPage(token);
         }
-
         finish();
     }
 
@@ -55,5 +51,4 @@ public class MainActivity extends Activity {
         intent.putExtra(MainActivity.EXTRA_TOKEN, token);
         startActivity(intent);
     }
-
 }
