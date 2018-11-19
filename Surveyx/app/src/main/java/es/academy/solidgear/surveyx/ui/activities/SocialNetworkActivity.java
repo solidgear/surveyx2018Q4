@@ -23,4 +23,9 @@ public class SocialNetworkActivity extends BaseActivity {
         });
     }
 
-}
+
+    public void shareOnFacebook(View view) {
+        System.out.println("WE DID IT MA FRIEND!");
+    }
+
+    }
