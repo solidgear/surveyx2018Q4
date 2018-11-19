@@ -2,6 +2,7 @@ package es.academy.solidgear.surveyx.ui.views;
 
 import android.content.Context;
 import android.os.Build;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.AppCompatRadioButton;
 import android.util.TypedValue;
 import android.view.Gravity;

@@ -4,10 +4,12 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.AppCompatCheckBox;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -89,11 +91,19 @@ public class QuestionFragment extends Fragment {
         answersOutlet = (RadioGroup) root.findViewById(R.id.answers_outlet);
 
         for (OptionModel option : question.getChoices()) {
-
-            // Create radio button with answer
-            AnswerRadioButton radioButton = new AnswerRadioButton(getActivity(), option.getText());
-            radioButton.setTag(option.getId());
-            answersOutlet.addView(radioButton);
+            //Si la cuestión es de tipo "select-multiple" pone los botones en checkBox si no en radioButton
+            if (question.getType().equals("select-multiple")){
+                //AppCompactCheckBox para que funcione en todas las versiones de Android
+                AppCompatCheckBox checkBox = new AppCompatCheckBox(getActivity());
+                checkBox.setText(option.getText());
+                checkBox.setTag(option.getId());
+                answersOutlet.addView(checkBox);
+            }else{
+                // Create radio button with answer
+                AnswerRadioButton radioButton = new AnswerRadioButton(getActivity(), option.getText());
+                radioButton.setTag(option.getId());
+                answersOutlet.addView(radioButton);
+            }
         }
 
         RadioGroup.OnCheckedChangeListener onAnswerChecked = new RadioGroup.OnCheckedChangeListener() {
