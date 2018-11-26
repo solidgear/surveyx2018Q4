@@ -146,8 +146,7 @@ public class SurveyActivity extends BaseActivity implements QuestionFragment.OnA
         // If running on Java 6 or older, use `new Random()` on RHS here
         //Random rnd = ThreadLocalRandom.current();
         Random rnd = new Random();
-        for (int i = ar.length - 1; i > 0; i--)
-        {
+        for (int i = ar.length - 1; i > 0; i--) {
             int index = rnd.nextInt(i + 1);
             // Simple swap
             int a = ar[index];
