@@ -67,8 +67,7 @@ public class SurveyModel {
         this.image = image;
     }
 
-    public int[] getQuestions() {return questions;
-    }
+    public int[] getQuestions() { return questions; }
 
     public void setQuestions(int[] questions) {
         this.questions = questions;

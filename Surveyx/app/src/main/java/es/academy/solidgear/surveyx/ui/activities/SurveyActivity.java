@@ -12,7 +12,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 import es.academy.solidgear.surveyx.R;
 import es.academy.solidgear.surveyx.api.APIService;

@@ -51,9 +51,7 @@ public class QuestionModel implements Serializable {
         this.description = description;
     }
 
-    public List<OptionModel> getChoices() {
-        return choices;
-    }
+    public List<OptionModel> getChoices() { return choices; }
 
     public void setChoices(List<OptionModel> choices) {
         this.choices = choices;
