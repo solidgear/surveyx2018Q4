@@ -59,6 +59,9 @@
         <provider android:authorities="com.facebook.app.FacebookContentProvider1534287020156031"
             android:name="com.facebook.FacebookContentProvider"
             android:exported="true" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b51eb5e061d4c1be57fefb22bb6ff1b835abe011" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
