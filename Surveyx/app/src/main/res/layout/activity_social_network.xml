@@ -103,7 +103,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@drawable/social_networks_frame"
-                    android:padding="2dp" >
+                    android:padding="2dp">
 
                     <ImageView
                         android:layout_width="50dp"
