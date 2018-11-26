@@ -26,7 +26,7 @@ public class SocialNetworkActivity extends BaseActivity {
     public void shareOnTwitter(View view) {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, "He completado una encuesta en SurveyX");
+        intent.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.social_networks_tweet));
         startActivity(Intent.createChooser(intent, "Share with"));
     }
 
