@@ -22,6 +22,8 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 import es.academy.solidgear.surveyx.R;
@@ -226,6 +228,12 @@ public class SurveysActivity extends BaseActivity {
         APIService.OnResponse<SurveysModel> onSurveysResponse = new APIService.OnResponse<SurveysModel>() {
             @Override
             public void onSuccess(SurveysModel surveysModel) {
+                Collections.sort(surveysModel.getSurveys(), new Comparator<SurveyModel>() {
+                    @Override
+                    public int compare(SurveyModel o1, SurveyModel o2) {
+                        return o1.getTitle().compareTo(o2.getTitle());
+                    }
+                });
                 showSurveys(surveysModel.getSurveys());
                 dialog.dismiss();
             }
