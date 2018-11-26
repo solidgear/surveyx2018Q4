@@ -31,6 +31,8 @@ public class QuestionFragment extends Fragment {
     private QuestionModel question;
     private RadioGroup answersOutlet;
 
+    private static ArrayList<Integer> checkBoxAnswers = new ArrayList<>();
+
     public interface OnAnswerChanged {
         void onAnswerChange(ArrayList<Integer> selectedAnswers);
     }
@@ -81,7 +83,7 @@ public class QuestionFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        super.onCreateView(inflater, container, savedInstanceState);
+            super.onCreateView(inflater, container, savedInstanceState);
 
         View root = inflater.inflate(R.layout.fragment_survey, container, false);
 
@@ -97,6 +99,18 @@ public class QuestionFragment extends Fragment {
                 AppCompatCheckBox checkBox = new AppCompatCheckBox(getActivity());
                 checkBox.setText(option.getText());
                 checkBox.setTag(option.getId());
+                checkBox.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        AppCompatCheckBox check = (AppCompatCheckBox) v;
+                        if (check.isChecked()){
+                            checkBoxAnswers.add((int) check.getTag());
+                        } else{
+                            checkBoxAnswers.remove((int) check.getTag());
+                        }
+                        QuestionFragment.this.onAnswerChanged.onAnswerChange(checkBoxAnswers);
+                    }
+                });
                 answersOutlet.addView(checkBox);
             }else{
                 // Create radio button with answer
