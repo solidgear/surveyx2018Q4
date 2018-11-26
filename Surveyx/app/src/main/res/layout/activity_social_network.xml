@@ -98,29 +98,52 @@
                 android:layout_marginRight="20dp">
 
                 <LinearLayout
+
+                    android:clickable="true"
+                    android:onClick="shareOnFacebook"
+                    android:id="@+id/facebook_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/social_networks_frame"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/facebook_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/social_networks_facebook_button" />
+
+
+                </LinearLayout>
+                <LinearLayout
                     android:id="@+id/twitter_button"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:background="@drawable/social_networks_frame"
                     android:clickable="true"
                     android:onClick="shareOnTwitter"
-                    android:padding="2dp">
-
-                    <ImageView
+              
+                  <ImageView
                         android:layout_width="50dp"
                         android:layout_height="fill_parent"
                         android:src="@drawable/twitter_icon" />
-
-                    <TextView
+          
+                  <TextView
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"
                         android:layout_weight="1"
+                        android:lines="1"
                         android:gravity="center_vertical"
                         android:lines="1"
                         android:text="@string/social_networks_twitter_button" />
-
-                </LinearLayout>
-
+              </LinearLayout>
             </TableRow>
 
         </LinearLayout>
@@ -140,7 +163,7 @@
             android:layout_marginBottom="20dp"
             android:layout_marginRight="50dp"
             android:layout_marginLeft="50dp"
-            android:text="Finish"
+            android:text="@string/social_networks_finish"
             android:textAllCaps="false"
             android:id="@+id/finishButton"
             android:contentDescription="@string/descriptor_survey_cancel_button"
