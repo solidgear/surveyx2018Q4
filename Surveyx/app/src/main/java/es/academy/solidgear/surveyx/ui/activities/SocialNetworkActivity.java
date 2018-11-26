@@ -37,5 +37,4 @@ public class SocialNetworkActivity extends BaseActivity {
         ShareDialog shareDialog = new ShareDialog(this);
         shareDialog.show(content, ShareDialog.Mode.AUTOMATIC);
     }
-
-    }
+}
