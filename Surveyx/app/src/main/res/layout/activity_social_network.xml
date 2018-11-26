@@ -96,6 +96,30 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp">
 
+                <LinearLayout
+                    android:clickable="true"
+                    android:onClick="shareOnFacebook"
+                    android:id="@+id/facebook_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/social_networks_frame"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="fill_parent"
+                        android:src="@drawable/facebook_icon" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:lines="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/social_networks_facebook_button" />
+
+                </LinearLayout>
+
             </TableRow>
 
         </LinearLayout>
