@@ -12,6 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 import es.academy.solidgear.surveyx.R;
 import es.academy.solidgear.surveyx.api.APIService;
@@ -95,6 +96,7 @@ public class SurveyActivity extends BaseActivity implements QuestionFragment.OnA
             @Override
             public void onSuccess(SurveyModel survey) {
                 questionIds = survey.getQuestions();
+                shuffleArray(questionIds);
                 totalTextView.setText(String.valueOf(questionIds.length));
                 dialog.dismiss();
 
@@ -137,6 +139,21 @@ public class SurveyActivity extends BaseActivity implements QuestionFragment.OnA
         };
 
         apiManager.fetchQuestion(questionId, onFetchQuestionResponse);
+    }
+
+    private static void shuffleArray(int[] ar)
+    {
+        // If running on Java 6 or older, use `new Random()` on RHS here
+        //Random rnd = ThreadLocalRandom.current();
+        Random rnd = new Random();
+        for (int i = ar.length - 1; i > 0; i--)
+        {
+            int index = rnd.nextInt(i + 1);
+            // Simple swap
+            int a = ar[index];
+            ar[index] = ar[i];
+            ar[i] = a;
+        }
     }
 
     private void showQuestion() {
